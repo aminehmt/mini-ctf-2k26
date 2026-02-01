@@ -1,0 +1,23 @@
+name: Memory Fragments
+category: forensics
+author: aminehmt
+difficulty: easy
+description: |
+  Un de nos agents a intercepté un dump mémoire partiel d'un navigateur web qui s'est planté. 
+  Il semblerait que quelqu'un était en train de partager des informations sensibles dans une 
+  conversation en ligne au moment du crash.
+  
+  Notre agent pense avoir repéré des morceaux d'un flag dans la mémoire, mais ils semblent être 
+  désordonnés. Les timestamps des messages pourraient être utiles pour reconstituer l'ordre...
+
+  Pouvez-vous analyser ce dump et récupérer le flag complet ?
+
+  Note : Les messages suivent le format [HH:MM:SS] username: message
+
+files:
+  - memory.dmp
+
+hints:
+  - Les fragments du flag sont dans des messages avec des timestamps différents
+  - Utilisez les timestamps pour déterminer l'ordre des fragments
+  - La commande strings peut vous aider à trouver du texte lisible dans le dump

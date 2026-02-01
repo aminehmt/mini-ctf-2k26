@@ -1,0 +1,28 @@
+# Fichiers macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+
+# Virtual environments
+.venv
+
+# VS Code
+.vscode/
+
+# IDEs
+.idea/
+*.swp
+*.swo
+
+# Fichiers temporaires
+*.tmp
+*~

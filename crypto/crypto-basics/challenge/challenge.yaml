@@ -1,0 +1,14 @@
+name: Reused OTP Key
+category: crypto
+difficulty: veryeasy
+author: aminehmt
+description: |
+  Le même pad (clé) a été utilisé pour chiffrer deux messages avec un XOR (one-time pad mal réutilisé).
+  Vous recevrez deux ciphertexts (hex). Le deuxième ciphertext correspond à un message connu
+  (présent dans l'énoncé). Récupérez le flag au format shellmates{...}.
+files:
+  - cipher1.hex
+  - cipher2.hex
+notes: |
+  - Le message connu est :
+    Server: mini-ctf\nVersion: 1.0\nMessage: Hello, Shellmates!\n
